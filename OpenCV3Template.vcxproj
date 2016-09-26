@@ -68,7 +68,7 @@
       <AdditionalDependencies>opencv_world310d.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
     <PostBuildEvent>
-      <Command>xcopy "D:\dev\vs\OpenCV3Template\opencv3\bin\opencv_world310d.dll" "$(TargetDir)opencv_world310d.dll"* /Y</Command>
+      <Command>xcopy "$(ProjectDir)opencv3\bin\opencv_world310d.dll" "$(TargetDir)opencv_world310d.dll"* /Y</Command>
       <Message>copy opencv3 dll to build dir...</Message>
     </PostBuildEvent>
   </ItemDefinitionGroup>
@@ -90,7 +90,7 @@
       <AdditionalDependencies>opencv_world310.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
     <PostBuildEvent>
-      <Command>xcopy "D:\dev\vs\OpenCV3Template\opencv3\bin\opencv_world310.dll" "$(TargetDir)opencv_world310.dll"* /Y</Command>
+      <Command>xcopy "$(ProjectDir)opencv3\bin\opencv_world310.dll" "$(TargetDir)opencv_world310.dll"* /Y</Command>
       <Message>copy opencv3 dll to build dir...</Message>
     </PostBuildEvent>
   </ItemDefinitionGroup>
